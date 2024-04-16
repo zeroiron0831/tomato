@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1><strong>상품 주문서</strong></h1>
+<form>
+    <fieldset>
+    <legend>개인 정보</legend>
+    <ul>
+    <li>
+    <label for="name">주문자 이름</label>
+    <input type="text" id="name">
+    </li>
+    <li>
+    <label for="tel">전화번호</label>
+    <input type="text" id="tel"placeholder=번호만입력>
+    </li>
+    </ul>
+    </fieldset>
+    <fieldset>
+        <legend>배송정보</legend>
+        <ul>
+        <li>
+        배송옵션 :<label><input type="radio" name="subject" value="기존배송지" checked>기존배송지</label>
+        <label><input type="radio" name="subject" value="새배송지">새배송지</label>
+        </li>
+        <li>
+        <label for="text">주소</label>
+        <input type="text" id="text">
+        </li>
+        <li>
+        요청사항 <select id="요청사항">
+        <option value="요청">요청사항을 선택하세요.</option>
+        </select>
+        </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>주문 정보</legend>
+        <p>상품</p>
+        <p><label><input type="checkbox" name="select" value="1kg">방울토마토1kg <s>10000원</s>8000원<input type="text">박스</label></p>
+        <p><label><input type="checkbox" name="select" value="2kg">방울토마토2kg <s>20000원</s>16000원<input type="text">박스</label></p>
+        <p><label><input type="checkbox" name="select" value="3kg">방울토마토3kg <s>30000원</s>24000원<input type="text">박스</label></p>
+        기타사항 <input type="text" size="50">
+    </fieldset>
+    <fieldset>
+        <legend>결제수단</legend>
+        <ul>
+            <li>
+                <label><input type="radio" name="buy" value="계좌이체" checked>계좌 이체</label>
+            </li>
+            <li>
+                <label><input type="radio" name="buy" value="카드결제">카드 결제</label>
+            </li>
+            <li>
+                <label><input type="radio" name="buy" value="일반결제">일반 결제</label>
+            </li>
+        </ul>
+    </fieldset>
+    <input type="reset" value="초기화"> <input type="button" value="결제하기">
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
